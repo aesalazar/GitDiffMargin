@@ -23,3 +23,6 @@ _ReSharper*/
 *.dotcover
 *.ncrunchproject
 *.ncrunchsolution
+
+# Visual Studio History (VSHistory) files
+.vshistory/
