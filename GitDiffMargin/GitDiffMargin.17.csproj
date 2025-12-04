@@ -9,7 +9,7 @@
   <Import Project="$(PkgLibGit2Sharp_NativeBinaries)\build\LibGit2Sharp.NativeBinaries.props" Condition="Exists('$(PkgLibGit2Sharp_NativeBinaries)\build\LibGit2Sharp.NativeBinaries.props')" />
 
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>net481</TargetFramework>
     <RootNamespace>GitDiffMargin</RootNamespace>
     <AssemblyName>GitDiffMargin.Impl</AssemblyName>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -36,16 +36,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Shell.Framework" Version="17.14.40264" />
     <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
     <!-- This is a development-only dependency. -->
-    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.0.2155-preview2" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.0.0-previews-1-31318-291" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.14.2120" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.14.40265" PrivateAssets="all" />
     <!--
       These are not development-only dependencies, but PrivateAssets is still used to avoid transitive dependencies when
       GitDiffMargin.Commands references this project using a ProjectReference.
     -->
-    <PackageReference Include="LibGit2Sharp" Version="0.26.2" />
-    <PackageReference Include="LibGit2Sharp.NativeBinaries" GeneratePathProperty="true" Version="2.0.306" ExcludeAssets="build;runtime" PrivateAssets="all" />
+    <PackageReference Include="LibGit2Sharp" Version="0.31.0" />
+    <PackageReference Include="LibGit2Sharp.NativeBinaries" GeneratePathProperty="true" Version="2.0.323" ExcludeAssets="build;runtime" PrivateAssets="all">
+      <IncludeAssets>compile; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
   </ItemGroup>
 
   <ItemGroup>
