@@ -37,12 +37,13 @@
     <PackageReference Include="Microsoft.VisualStudio.Shell.Framework" Version="17.14.40264" />
     <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
     <PackageReference Include="LibGit2Sharp" Version="0.31.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Editor" Version="17.14.249" />
-    <PackageReference Include="Microsoft.VisualStudio.Shell.15.0" Version="17.14.40264" />
-    <PackageReference Include="Microsoft.VisualStudio.Threading" Version="17.14.15" />
+    <PackageReference Include="Microsoft.VisualStudio.Editor" Version="17.14.249" ExcludeAssets="runtime" />
+    <PackageReference Include="Microsoft.VisualStudio.Shell.15.0" Version="17.14.40264" ExcludeAssets="runtime" />
+    <PackageReference Include="Microsoft.VisualStudio.Threading" Version="17.14.15" ExcludeAssets="runtime" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
     <PackageReference Include="StreamJsonRpc" Version="2.22.23" />
-    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.14.2120" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.14.2120" PrivateAssets="all" ExcludeAssets="runtime" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="9.0.0" ExcludeAssets="runtime" />
   </ItemGroup>
 
   <ItemGroup>
