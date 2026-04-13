@@ -1,3 +1,7 @@
+# This Fork
+
+I created this fork to get the extension to work in Visual Studio 2026.  The original repo seems to have gone radio silent and I did not want to see the extension die as it is one of my favorites.  If the original ever comes back to life I will take this one down.
+ 
  # Git Diff Margin [![VS Marketplace](https://vsmarketplacebadge.apphb.com/version/LaurentKempe.GitDiffMargin.svg)](https://marketplace.visualstudio.com/items?itemName=LaurentKempe.GitDiffMargin) [![Rating(Short)](https://vsmarketplacebadge.apphb.com/rating-short/LaurentKempe.GitDiffMargin.svg)](https://marketplace.visualstudio.com/items?itemName=LaurentKempe.GitDiffMargin) [![Installs(Short))](https://vsmarketplacebadge.apphb.com/installs-short/LaurentKempe.GitDiffMargin.svg)](https://marketplace.visualstudio.com/items?itemName=LaurentKempe.GitDiffMargin) [![Downloads(Short)))](https://vsmarketplacebadge.apphb.com/downloads-short/LaurentKempe.GitDiffMargin.svg)](https://marketplace.visualstudio.com/items?itemName=LaurentKempe.GitDiffMargin)
 
 Git Diff Margin displays live Git changes of the currently edited file on Visual Studio margin and scroll bar.
